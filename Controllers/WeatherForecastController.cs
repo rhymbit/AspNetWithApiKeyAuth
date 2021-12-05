@@ -1,11 +1,9 @@
-using AspNetWithApiKey.Attributes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetWithApiKey.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-[ApiKey]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
